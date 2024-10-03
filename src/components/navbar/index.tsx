@@ -9,6 +9,7 @@ import { Routes } from "@/lib/routes";
 import NavLink from "./navLink";
 import { Separator } from "../ui/separator";
 import ThemeToggle from "../theme";
+import Link from "next/link";
 
 const collapsibleTriggerIconClass = 'col-start-1 row-start-1 transition-opacity duration-300';
 
@@ -31,7 +32,9 @@ export default function Navbar() {
                         <XIcon className={cn('opacity-0 group-data-[state=open]:opacity-100', collapsibleTriggerIconClass)} />
                     </CollapsibleTrigger>
                     <div className={cn('flex flex-grow md:flex-grow-0 items-center justify-between ms-2 my-4')}>
-                        <h1 className={cn('text-lg font-bold')}>Chroni-Companion</h1>
+                        <Link href="/">
+                            <h1 className={cn('text-lg font-bold')}>Chroni-Companion</h1>
+                        </Link>
                     </div>
                     <div className={cn("flex items-center md:order-last")}>
                         <ThemeToggle />
