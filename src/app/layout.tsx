@@ -20,7 +20,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
             <body>
                 <Providers defaultTheme={defaultTheme}>
                     <Navbar />
-                    <main className={cn('max-w-5xl flex flex-col flex-grow items-center mx-auto py-4 px-2 overflow-hidden')}>
+                    <main className={cn('w-full max-w-5xl flex flex-col flex-grow items-center mx-auto py-4 px-2 overflow-hidden')}>
                         {children}
                     </main>
                 </Providers>
