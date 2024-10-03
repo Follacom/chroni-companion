@@ -16,7 +16,14 @@ export default function NavLink({ href, children }: NavLinkProps) {
         <>
             <Link
                 href={href}
-                className={cn("px-4 py-1.5 hover:bg-accent hover:text-accent-foreground", pathname === href ? "border bg-background shadow-md shadow-border" : "")}>
+                prefetch
+                className={
+                    cn(
+                        "px-4 py-1.5 hover:bg-accent hover:text-accent-foreground",
+                        pathname === href ? "border bg-background shadow-md shadow-border" : ""
+                    )
+                }
+            >
                 {children}
             </Link>
         </>
