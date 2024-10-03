@@ -1,6 +1,6 @@
 # Chroni-Companion
 
-Website : Yet to be deployed
+Website : [Chroni-Companion](https://chroni-companion.vercel.app)
 
 ## Table of Contents
 
